@@ -25,7 +25,7 @@ sleep 2
 echo "$CYAN info -$WHITE If there are more than 50 warnings you will not be able to commit your changes."
 sleep 2
 
-npx eslint './{components,util}/**/*' --ext .tsx,.ts --max-warnings 80
+npx eslint './src/{components,util}/**/*' --ext .tsx,.ts --max-warnings 80
 
 echo "$CYAN info -$GREEN ✅ Good job, eslint checks were passed.$WHITE"
 sleep 2

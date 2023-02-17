@@ -6,6 +6,8 @@ export const decorators = [
         padding: "40px",
         display: "flex",
         justifyContent: "center",
+        fontFamily:
+          "Roobert, Roobert, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
       }}
     >
       <Story />

@@ -3,10 +3,17 @@ import * as S from "./styled";
 import { Props } from "./types";
 
 export const Button: FC<Props> = (props) => {
-  const { label, $variant, onClick } = props;
+  const {
+    label,
+    $variant = "contained",
+    icon,
+    $iconPosition = "left",
+    ...restProps
+  } = props;
 
   return (
-    <S.Button $variant={$variant || "contained"} {...{ onClick }}>
+    <S.Button {...{ $variant, $iconPosition, ...restProps }}>
+      {icon && icon}
       {label}
     </S.Button>
   );

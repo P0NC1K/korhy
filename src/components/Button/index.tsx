@@ -16,7 +16,7 @@ export const Button: FC<Props> = (props) => {
   return (
     <S.Button
       {...{ $variant, $iconPosition, ...restProps }}
-      className="main-button-container"
+      className="Main-Button-Container"
     >
       {href ? (
         <a {...{ href, target }}>

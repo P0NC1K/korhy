@@ -80,6 +80,10 @@ export const Button = styled.div<StyledProps>`
     `
     border: none;
     color: ${$color || theme.colors.black.base};
-    font-weight: ${$fontWeight || 400}
+    font-weight: ${$fontWeight || 400};
+    
+    &:hover{
+      text-decoration: underline;
+    }
   `}
 `;

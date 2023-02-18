@@ -13,6 +13,7 @@ export const theme: Theme = {
   colors: {
     white: {
       base: "#F0F0F0",
+      darker: "#B5B5B5",
     },
     brown: {
       light: "#EBE7DE",

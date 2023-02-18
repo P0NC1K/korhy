@@ -21,7 +21,9 @@ export type StyledProps = {
 };
 
 export type Props = StyledProps & {
-  label: string;
+  label?: string;
   onClick?: () => void;
   icon?: JSX.Element;
+  href?: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
 };

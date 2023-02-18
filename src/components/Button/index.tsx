@@ -1,6 +1,6 @@
 import { FC } from "react";
-import * as S from "./styled";
 import { Props } from "./types";
+import * as S from "./styled";
 
 export const Button: FC<Props> = (props) => {
   const {
@@ -8,13 +8,27 @@ export const Button: FC<Props> = (props) => {
     $variant = "contained",
     icon,
     $iconPosition = "left",
+    href,
+    target = "_self",
     ...restProps
   } = props;
 
   return (
-    <S.Button {...{ $variant, $iconPosition, ...restProps }}>
-      {icon && icon}
-      {label}
+    <S.Button
+      {...{ $variant, $iconPosition, ...restProps }}
+      className="main-button-container"
+    >
+      {href ? (
+        <a {...{ href, target }}>
+          {icon && icon}
+          {label}
+        </a>
+      ) : (
+        <>
+          {icon && icon}
+          {label}
+        </>
+      )}
     </S.Button>
   );
 };

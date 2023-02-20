@@ -6,3 +6,6 @@ export { LinkedinIcon } from "./LinkedinIcon";
 export { InstagramIcon } from "./InstagramIcon";
 export { PointIcon } from "./PointIcon";
 export { LanguageIcon } from "./LanguageIcon";
+export { CoffeeIcon } from "./CoffeeIcon";
+export { QuestionMarkIcon } from "./QuestionMarkIcon";
+export { BurgerIcon } from "./BurgerIcon";

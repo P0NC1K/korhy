@@ -85,5 +85,11 @@ export const Button = styled.div<StyledProps>`
     &:hover{
       text-decoration: underline;
     }
+
+    svg {
+      path{
+        stroke: ${$color || theme.colors.black.base};
+      }
+    }
   `}
 `;

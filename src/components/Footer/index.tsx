@@ -8,7 +8,7 @@ import { LanguageIcon, PointIcon } from "../../public";
 
 export const Footer: FC<Props> = (props) => {
   return (
-    <S.Footer>
+    <S.Footer className="Main-Footer-Wrapper">
       <S.Content>
         <h3>Korhy</h3>
         <p>Vizitați Centrul de ajutor</p>
@@ -29,7 +29,6 @@ export const Footer: FC<Props> = (props) => {
           ))}
         </S.InternalLinksWrapper>
       </S.Content>
-
       <S.ExternalLinksWrapper>
         <S.SocialLinkWrapper>
           <S.SocialLink>

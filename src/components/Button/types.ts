@@ -4,6 +4,8 @@ export type StyledProps = {
   $background?: string;
   $color?: string;
   $fontSize?: string;
+  $size?: "normal" | "small";
+  $simpleHover?: "underline" | "contained";
   $fontWeight?:
     | "100"
     | "200"
@@ -25,5 +27,6 @@ export type Props = StyledProps & {
   onClick?: () => void;
   icon?: JSX.Element;
   href?: string;
+  className?: string;
   target?: "_blank" | "_self" | "_parent" | "_top";
 };

@@ -1,51 +1,77 @@
 import styled from "@emotion/styled/macro";
 import { theme } from "../../utils";
 import { styledFunc } from "../../utils/functions";
-import { maxMQ } from "../../styled";
 
 export const Header = styled.header`
-    width: 100%;
-    max-height: 64px;
-    padding: 10px;
-    background-color: ${theme.colors.black.base};
-    ${styledFunc.flex(
-        "space-between",
-        "center",
-        "row"
-    )}
-
-`
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 64px;
+  padding: 24px;
+  background-color: ${theme.colors.black.base};
+  ${styledFunc.flex("space-between", "center", "row")}
+`;
 
 export const LogoWrapper = styled.div`
-    height: 100%;
-    a img {
-        height: 100%;
+  a {
+    ${styledFunc.flex("center", "center", "row")}
+
+    img {
+      width: 62px;
+      height: auto;
     }
-`
+  }
+`;
 
 export const IconList = styled.div`
-    ${styledFunc.flex("space-between", "center", "row")}
-    gap: 24px;
-    .Main-Button-Container {
-        padding: 0;
-    }
-`
+  ${styledFunc.flex("space-between", "center", "row")}
+  gap: 12px;
 
-export const BurgerButton = styled.div`
+  .Real-btn {
+    margin-right: 12px;
+  }
+
+  ${styledFunc.media(styledFunc.breakpoints.tablet)} {
     display: none;
-`
+  }
+`;
 
 export const NavMenu = styled.div`
-    ${styledFunc.flex("space-between", "center", "row")}
-    gap: 24px;
+  ${styledFunc.flex("space-between", "center", "row")}
 
-    ${maxMQ[0]} {
-        & > div {
-            display: none;
-        }
-        ${BurgerButton} {
-            display: block;
-        }
+  .Burger-btn {
+    display: none;
+    ${styledFunc.media(styledFunc.breakpoints.tablet)} {
+      display: flex;
     }
-    
-`
+  }
+`;
+
+export const CloseMenu = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+`;
+
+export const DropdownMenu = styled.div`
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 12px;
+  transform: translate(-100%, 100px);
+  margin-left: -24px;
+  z-index: 15;
+  background: ${theme.colors.brown.dark};
+  gap: 6px;
+  ${styledFunc.flex("center", "center", "column")}
+
+  .Main-Button-Wrapper {
+    width: 100%;
+    ${styledFunc.flex("flex-start", "center", "row")}
+  }
+`;

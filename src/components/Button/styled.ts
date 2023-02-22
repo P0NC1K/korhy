@@ -5,7 +5,8 @@ import { styledFunc } from "../../utils/functions";
 import { StyledProps } from "./types";
 
 export const Button = styled.div<StyledProps>`
-  min-height: 54px;
+  min-height: ${({ $size }) =>
+    $size === "normal" ? `54px` : $size === "small" && "46px"};
   padding: 0 1.2em;
   border-radius: 12px;
   width: fit-content;
@@ -15,6 +16,7 @@ export const Button = styled.div<StyledProps>`
   font-size: ${({ $fontSize }) => $fontSize || `16px`};
   font-weight: ${({ $fontWeight }) => $fontWeight || 600};
   line-height: normal;
+  box-sizing: border-box;
   border: 0.125em solid
     ${({ $background }) => $background || theme.colors.brown.base};
   gap: 12px;
@@ -75,16 +77,23 @@ export const Button = styled.div<StyledProps>`
     }
   `}
 
-  ${({ $variant, $color, $fontWeight }) =>
+  ${({ $variant, $color, $fontWeight, $background, $simpleHover }) =>
     $variant === "simple" &&
     `
     border: none;
     color: ${$color || theme.colors.black.base};
     font-weight: ${$fontWeight || 400};
-    
+
     &:hover{
+    ${
+      $simpleHover === "underline"
+        ? ` 
       text-decoration: underline;
+    `
+        : $simpleHover === "contained" &&
+          `background: ${rgba($color || theme.colors.brown.base, 0.2)};`
     }
+  }
 
     svg {
       path{

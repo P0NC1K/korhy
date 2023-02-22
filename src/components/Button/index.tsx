@@ -10,13 +10,16 @@ export const Button: FC<Props> = (props) => {
     $iconPosition = "left",
     href,
     target = "_self",
+    $size = "normal",
+    $simpleHover = "underline",
+    className,
     ...restProps
   } = props;
 
   return (
     <S.Button
-      {...{ $variant, $iconPosition, ...restProps }}
-      className="Main-Button-Container"
+      {...{ $variant, $iconPosition, $size, $simpleHover, ...restProps }}
+      className={`Main-Button-Wrapper ${className}`}
     >
       {href ? (
         <a {...{ href, target }}>

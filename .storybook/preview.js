@@ -3,7 +3,6 @@ export const decorators = [
     <div
       style={{
         width: "100%",
-        padding: "40px",
         display: "flex",
         justifyContent: "center",
         boxSizing: "border-box",

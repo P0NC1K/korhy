@@ -9,3 +9,4 @@ export { LanguageIcon } from "./LanguageIcon";
 export { CoffeeIcon } from "./CoffeeIcon";
 export { QuestionMarkIcon } from "./QuestionMarkIcon";
 export { BurgerIcon } from "./BurgerIcon";
+export { CupIcon } from "./CupIcon";

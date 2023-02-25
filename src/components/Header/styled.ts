@@ -1,4 +1,5 @@
 import styled from "@emotion/styled/macro";
+import { rgba } from "emotion-rgba";
 import { theme } from "../../utils";
 import { styledFunc } from "../../utils/functions";
 
@@ -7,8 +8,10 @@ export const Header = styled.header`
   box-sizing: border-box;
   width: 100%;
   min-height: 64px;
-  padding: 24px;
-  background-color: ${theme.colors.black.base};
+  padding: 12px 24px;
+  background-color: ${rgba(theme.colors.brown.dark, 0.5)};
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   ${styledFunc.flex("space-between", "center", "row")}
 `;
 
@@ -66,7 +69,9 @@ export const DropdownMenu = styled.div`
   transform: translate(-100%, 100px);
   margin-left: -24px;
   z-index: 15;
-  background: ${theme.colors.brown.dark};
+  background-color: ${rgba(theme.colors.brown.dark, 0.7)};
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   gap: 6px;
   ${styledFunc.flex("center", "center", "column")}
 

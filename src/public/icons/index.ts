@@ -10,3 +10,8 @@ export { CoffeeIcon } from "./CoffeeIcon";
 export { QuestionMarkIcon } from "./QuestionMarkIcon";
 export { BurgerIcon } from "./BurgerIcon";
 export { CupIcon } from "./CupIcon";
+export { CoffeeMachineIcon } from "./CoffeeMachineIcon";
+export { CoffeeCupIcon } from "./CoffeeCupIcon";
+export { CoffeeStreetCupIcon } from "./CoffeeStreetCupIcon";
+export { TeaCupIcon } from "./TeaCupIcon";
+export { IceCupIcon } from "./IceCupIcon";

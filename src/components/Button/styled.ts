@@ -68,6 +68,8 @@ export const Button = styled.div<StyledProps>`
           ? rgba($background, 0.2)
           : rgba(theme.colors.brown.base, 0.2)
       };
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
     }
     
     svg {
@@ -91,7 +93,10 @@ export const Button = styled.div<StyledProps>`
       text-decoration: underline;
     `
         : $simpleHover === "contained" &&
-          `background: ${rgba($color || theme.colors.brown.base, 0.2)};`
+          `background: ${rgba($color || theme.colors.brown.base, 0.2)};
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          `
     }
   }
 

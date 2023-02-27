@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { styledFunc, theme } from "../../../utils";
 
 export const Wrapper = styled.div`
-  background: ${theme.colors.white.light};
+  background: ${theme.colors.brown.light};
   padding: 40px 0;
   ${styledFunc.flex("center", "center", "column")};
   gap: 32px;

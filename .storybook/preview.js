@@ -7,7 +7,7 @@ export const decorators = [
         justifyContent: "center",
         boxSizing: "border-box",
         fontFamily:
-          "Roobert, Roobert, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+          "Montserrat, sans-serif",
       }}
     >
       <Story />

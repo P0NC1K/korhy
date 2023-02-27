@@ -5,6 +5,7 @@ import { styledFunc } from "../../utils/functions";
 
 export const Header = styled.header`
   position: fixed;
+  z-index: 5;
   box-sizing: border-box;
   width: 100%;
   min-height: 64px;

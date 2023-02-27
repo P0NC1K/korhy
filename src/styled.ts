@@ -1,11 +1,12 @@
 import styled from "@emotion/styled";
 
-// Pentru variabile styled globale avem file in utils/functions/styledFunc
-
-// const breakpoints = [576, 768, 992, 1200]
-// export const maxMQ = breakpoints.map(bp => `@media (max-width: ${bp}px)`)
-
-export const App = styled.div`
-  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+export const GlobalStyles = styled.div`
+// Example of adding font
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("./fonts/Montserrat-Regular.ttf") format("OpenType");
+    font-weight: normal;
+    font-style: normal;
+  }
+  font-family: 'Montserrat', sans-serif;
 `;

@@ -1,5 +1,6 @@
-import { Header } from "../../components";
+import { Footer, Header } from "../../components";
 import { AboutSlide } from "./AboutSlide";
+import { SecondSlide } from "./SecondSlide";
 import { StartSlide } from "./StartSlide";
 import * as S from "./styled";
 
@@ -9,6 +10,8 @@ export const MainPage = (props: any) => {
       <Header />
       <StartSlide />
       <AboutSlide />
+      <SecondSlide />
+      <Footer />
     </S.Wrapper>
   );
 };

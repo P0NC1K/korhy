@@ -39,15 +39,42 @@ export const NameWrapper = styled.div`
 
 export const ContentWrapper = styled.div`
   ${styledFunc.flex("center", "center", "row")};
+  flex-wrap: wrap;
   gap: 32px;
+  margin: 0 24px;
+
+  ${styledFunc.media(styledFunc.breakpoints.laptop)} {
+    flex-direction: column;
+
+    img {
+      position: absolute;
+      left: 100%;
+      opacity: 0.8;
+      transform: translateX(-65%);
+    }
+  }
 `;
 
 export const ParagraphWrapper = styled.div`
   ${styledFunc.flex("center", "center", "column")};
   gap: 24px;
+  z-index: 1;
 
   svg {
     max-width: 118px;
     ${styledFunc.flex("center", "center", "column")};
+  }
+
+  ${styledFunc.media(styledFunc.breakpoints.laptop)} {
+    gap: 32px;
+
+    .Main-Paragraph-Wrapper {
+      ${styledFunc.flex("center", "center", "row")}
+
+      .Paragraph-Content {
+        ${styledFunc.flex("center", "flex-start", "column")};
+        text-align: start;
+      }
+    }
   }
 `;

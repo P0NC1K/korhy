@@ -22,9 +22,6 @@ export const Paragraph = styled.div<StyledProps>`
       "center",
       $iconPosition === "left" ? "row" : "row-reverse"
     )}
-
-  ${({ $iconPosition }) =>
-    $iconPosition === "top" && styledFunc.flex("center", "center", "column")}
 `;
 
 export const TextWrapper = styled.div<StyledProps>`

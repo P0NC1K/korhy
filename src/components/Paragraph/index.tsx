@@ -18,7 +18,10 @@ export const Paragraph: FC<Props> = (props) => {
       className={`Main-Paragraph-Wrapper ${className}`}
     >
       {icon && icon}
-      <S.TextWrapper {...{ $iconPosition, ...restProps }}>
+      <S.TextWrapper
+        {...{ $iconPosition, ...restProps }}
+        className="Paragraph-Content"
+      >
         <h3>{title}</h3>
         <p>{content}</p>
       </S.TextWrapper>

@@ -6,7 +6,6 @@ import { Button } from "../../../components";
 export const SecondSlide: FC = () => {
   return (
     <S.Wrapper>
-      <S.TopBackColor />
       <S.Content>
         <img src={logoBig} alt="logo" />
         <S.Block>

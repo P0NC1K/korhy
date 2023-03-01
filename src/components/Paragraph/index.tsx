@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { Props } from "./types";
+import { ParagraphProps } from "./types";
 import * as S from "./styled";
 
-export const Paragraph: FC<Props> = (props) => {
+export const Paragraph: FC<ParagraphProps> = (props) => {
   const {
     icon,
     title,

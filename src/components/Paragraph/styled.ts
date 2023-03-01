@@ -8,10 +8,12 @@ export const Paragraph = styled.div<StyledProps>`
 
   svg {
     height: ${({ $iconHeight }) => $iconHeight || `80px`};
-    width: ${({ $iconWeight }) => $iconWeight || `80px`};
 
     path {
+      fill: ${({ $iconColor }) => $iconColor || theme.colors.black.base};
       stroke: ${({ $iconColor }) => $iconColor || theme.colors.black.base};
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -22,6 +24,15 @@ export const Paragraph = styled.div<StyledProps>`
       "center",
       $iconPosition === "left" ? "row" : "row-reverse"
     )}
+
+  ${({ $iconPosition }) =>
+    $iconPosition === "top" &&
+    `
+        ${styledFunc.flex("center", "center", "column")};
+        text-align: center;
+    `}
+
+    gap: ${({ $gap }) => $gap || "24px"};
 `;
 
 export const TextWrapper = styled.div<StyledProps>`
@@ -58,4 +69,6 @@ export const TextWrapper = styled.div<StyledProps>`
         ${styledFunc.flex("center", "center", "column")};
         text-align: center;
     `}
+
+    gap: ${({ $textGap }) => $textGap || "18px"};
 `;

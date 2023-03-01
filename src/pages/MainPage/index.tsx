@@ -1,5 +1,6 @@
 import { Footer, Header } from "../../components";
 import { AboutSlide } from "./AboutSlide";
+import { AdvantagesSlide } from "./AdvantagesSlide";
 import { Gallery } from "./Gallery";
 import { SecondSlide } from "./SecondSlide";
 import { StartSlide } from "./StartSlide";
@@ -12,6 +13,7 @@ export const MainPage = (props: any) => {
       <StartSlide />
       <AboutSlide />
       <SecondSlide />
+      <AdvantagesSlide />
       <Gallery />
       <Footer />
     </S.Wrapper>

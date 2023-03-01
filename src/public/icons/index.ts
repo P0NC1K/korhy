@@ -15,3 +15,6 @@ export { CoffeeCupIcon } from "./CoffeeCupIcon";
 export { CoffeeStreetCupIcon } from "./CoffeeStreetCupIcon";
 export { TeaCupIcon } from "./TeaCupIcon";
 export { IceCupIcon } from "./IceCupIcon";
+export { CoffeePhoneIcon } from "./CoffeePhoneIcon";
+export { VaseIcon } from "./VaseIcon";
+export { SalePhoneIcon } from "./SalePhoneIcon";

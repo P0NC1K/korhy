@@ -5,7 +5,8 @@ import { styledFunc, theme } from "../../../utils";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 90vh;
+  min-height: 100vh;
+  height: 912px;
   background-image: url(${secondSlideBg}),
     -webkit-linear-gradient(top, ${rgba(theme.colors.brown.light, 1)} 80%, ${rgba(
             theme.colors.white.base,
@@ -38,7 +39,7 @@ export const Content = styled.div`
     flex-direction: column;
     padding: 0;
     width: 100%;
-    
+
     img {
       width: 150px;
       height: 150px;
@@ -97,5 +98,4 @@ export const TitleWrapper = styled.div`
       display: none;
     }
   }
-
 `;

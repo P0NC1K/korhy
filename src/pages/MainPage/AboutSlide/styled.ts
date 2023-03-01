@@ -4,7 +4,7 @@ import { styledFunc, theme } from "../../../utils";
 export const Wrapper = styled.div`
   overflow: hidden;
   background: ${theme.colors.brown.light};
-  padding: 40px 0;
+  padding: 40px 0 82px;
   ${styledFunc.flex("center", "center", "column")};
   gap: 32px;
 `;

@@ -7,9 +7,11 @@ export type StyledProps = {
   $titleFontSize?: string;
   $contentFontSize?: string;
   $maxWidth?: string;
+  $gap?: string;
+  $textGap?: string;
 };
 
-export type Props = StyledProps & {
+export type ParagraphProps = StyledProps & {
   icon?: JSX.Element;
   title?: string;
   content?: string;

@@ -30,6 +30,7 @@ export const Content = styled.div`
     margin: 0;
     font-weight: bold;
     font-size: 48px;
+    text-align: center;
   }
 
   h2 {

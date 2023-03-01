@@ -8,9 +8,9 @@ export const Paragraph = styled.div<StyledProps>`
 
   svg {
     height: ${({ $iconHeight }) => $iconHeight || `80px`};
-
+    width: ${({ $iconWeight }) => $iconWeight || `auto`};
     path {
-      fill: ${({ $iconColor }) => $iconColor || theme.colors.black.base};
+      fill: ${({ $iconColor, $fill }) => $fill ? $iconColor || theme.colors.black.base : 'none'};
       stroke: ${({ $iconColor }) => $iconColor || theme.colors.black.base};
       width: 100%;
       height: 100%;

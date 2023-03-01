@@ -3,25 +3,23 @@ import { contentData } from "./mockData";
 import CoffeeCup from "../../../public/img/CoffeeCup.png";
 import * as S from "./styled";
 import { theme } from "../../../utils";
+import { Title } from "../../../components/Title";
 
 export const AboutSlide = () => {
   return (
     <S.Wrapper>
-      <S.NameWrapper>
-        <h3>What Happens Here</h3>
-        <h2>COFFEE BUILD YOUR BASE</h2>
-        <hr />
-      </S.NameWrapper>
+      <Title title="COFFEE BUILD YOUR BASE" subTitle="What Happens Here" />
       <S.ContentWrapper>
         <S.ParagraphWrapper>
           {contentData &&
             contentData.map(
-              ({ id, title, content, icon, anchor }) =>
+              ({ id, title, content, icon, anchor, iconFill }) =>
                 anchor === "right" && (
                   <Paragraph
                     key={id}
                     $iconWeight="100%"
                     $maxWidth="412px"
+                    $fill={iconFill}
                     $textColor={theme.colors.black.light}
                     $iconPosition={anchor}
                     {...{ title, content, icon }}
@@ -33,13 +31,14 @@ export const AboutSlide = () => {
         <S.ParagraphWrapper>
           {contentData &&
             contentData.map(
-              ({ id, title, content, icon, anchor }) =>
+              ({ id, title, content, icon, anchor, iconFill }) =>
                 anchor === "left" && (
                   <Paragraph
                     key={id}
                     $iconWeight="100%"
                     $maxWidth="412px"
                     $iconPosition={anchor}
+                    $fill={iconFill}
                     $textColor={theme.colors.black.light}
                     {...{ title, content, icon }}
                   />

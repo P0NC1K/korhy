@@ -15,6 +15,7 @@ export const contentData: dataProps[] = [
     content:
       "Combinație perfectă între cafeaua fină si laptele dulce cu o textură catifelată.",
     icon: <CupIcon />,
+    iconFill: false,
     anchor: "right",
   },
   {
@@ -23,6 +24,7 @@ export const contentData: dataProps[] = [
     content:
       "Dulce, amar, acru și sărat, un echilibru perfect între aceste 4 se combină într-o ceașcă simplă de cafea.",
     icon: <CoffeeMachineIcon />,
+    iconFill: false,
     anchor: "right",
   },
   {
@@ -31,6 +33,7 @@ export const contentData: dataProps[] = [
     content:
       "Cafea mai ușor de băut ca espresso dublu și în același timp mai aromată ca un espresso lung.",
     icon: <CoffeeCupIcon />,
+    iconFill: true,
     anchor: "right",
   },
   {
@@ -39,6 +42,7 @@ export const contentData: dataProps[] = [
     content:
       "Fratele mai mic al latte-ului. Pentru momentele când vreai să savurezi gustul la cafea mai tare ca dulcețea laptelui.",
     icon: <CoffeeStreetCupIcon />,
+    iconFill: false,
     anchor: "left",
   },
   {
@@ -47,6 +51,7 @@ export const contentData: dataProps[] = [
     content:
       "Cappuccino este o specialitate de cafea, la fel de eficientă precum un espresso, dar mai lungă și dulce.",
     icon: <TeaCupIcon />,
+    iconFill: true,
     anchor: "left",
   },
   {
@@ -55,6 +60,7 @@ export const contentData: dataProps[] = [
     content:
       "Cafea puternică dar plină de o explozie de gusturi. Și dacă nu vă place singură, combinați-o cu lapte sau apă tonică.",
     icon: <IceCupIcon />,
+    iconFill: true,
     anchor: "left",
   },
 ];

@@ -8,13 +8,14 @@ export const Paragraph: FC<ParagraphProps> = (props) => {
     title,
     content,
     $iconPosition = "left",
+    $fill = true,
     className,
     ...restProps
   } = props;
 
   return (
     <S.Paragraph
-      {...{ $iconPosition, ...restProps }}
+      {...{ $iconPosition, $fill, ...restProps }}
       className={`Main-Paragraph-Wrapper ${className}`}
     >
       {icon && icon}

@@ -18,3 +18,6 @@ export { IceCupIcon } from "./IceCupIcon";
 export { CoffeePhoneIcon } from "./CoffeePhoneIcon";
 export { VaseIcon } from "./VaseIcon";
 export { SalePhoneIcon } from "./SalePhoneIcon";
+export { CreditCardIcon } from "./CreditCardIcon";
+export { MailIcon } from "./MailIcon";
+export { SlashIcon } from "./SlashIcon";

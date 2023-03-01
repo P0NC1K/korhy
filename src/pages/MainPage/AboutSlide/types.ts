@@ -3,5 +3,6 @@ export type dataProps = {
   title: string;
   content: string;
   icon: JSX.Element;
+  iconFill: boolean
   anchor: "left" | "right" | "top";
 };

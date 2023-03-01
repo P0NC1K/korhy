@@ -9,6 +9,7 @@ export type StyledProps = {
   $maxWidth?: string;
   $gap?: string;
   $textGap?: string;
+  $fill?: boolean;
 };
 
 export type ParagraphProps = StyledProps & {

@@ -13,6 +13,10 @@ export const Footer = styled.div`
   background-size: cover;
   padding: 24px;
   box-sizing: border-box;
+
+  ${styledFunc.maxMedia(styledFunc.breakpoints.tablet)} {
+    min-height: 140vh;
+  }
 `;
 
 export const Content = styled.div`
@@ -54,7 +58,7 @@ export const InternalLinks = styled.div`
 export const ExternalLinksWrapper = styled.div`
   width: 100%;
   margin-top: 32px;
-  ${styledFunc.flex("space-between", "flex-start", "column")}
+  ${styledFunc.flex("space-between", "flex-start", "column")};
 `;
 
 export const SocialLinkWrapper = styled.div`
@@ -69,6 +73,7 @@ export const SocialLinkWrapper = styled.div`
 
 export const SocialLink = styled.div`
   ${styledFunc.flex("space-between", "flex-start", "row")}
+  flex-wrap: wrap;
   gap: 32px;
 `;
 

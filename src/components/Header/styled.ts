@@ -35,7 +35,7 @@ export const IconList = styled.div`
     margin-right: 12px;
   }
 
-  ${styledFunc.media(styledFunc.breakpoints.tablet)} {
+  ${styledFunc.maxMedia(styledFunc.breakpoints.tablet)} {
     display: none;
   }
 `;
@@ -45,7 +45,7 @@ export const NavMenu = styled.div`
 
   .Burger-btn {
     display: none;
-    ${styledFunc.media(styledFunc.breakpoints.tablet)} {
+    ${styledFunc.maxMedia(styledFunc.breakpoints.tablet)} {
       display: flex;
     }
   }

@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { styledFunc, theme } from "../../../utils";
 
 export const Wrapper = styled.div`
+  overflow: hidden;
   background: ${theme.colors.brown.light};
   padding: 40px 0;
   ${styledFunc.flex("center", "center", "column")};
@@ -42,13 +43,14 @@ export const ContentWrapper = styled.div`
   flex-wrap: wrap;
   gap: 32px;
   margin: 0 24px;
+  position: relative;
 
-  ${styledFunc.media(styledFunc.breakpoints.laptop)} {
+  ${styledFunc.maxMedia(styledFunc.breakpoints.laptop)} {
     flex-direction: column;
 
     img {
       position: absolute;
-      left: 100%;
+      left: 72vw;
       opacity: 0.8;
       transform: translateX(-65%);
     }
@@ -65,7 +67,7 @@ export const ParagraphWrapper = styled.div`
     ${styledFunc.flex("center", "center", "column")};
   }
 
-  ${styledFunc.media(styledFunc.breakpoints.laptop)} {
+  ${styledFunc.maxMedia(styledFunc.breakpoints.laptop)} {
     gap: 32px;
 
     .Main-Paragraph-Wrapper {

@@ -11,5 +11,6 @@ export const styledFunc = {
     laptop: 1200,
     desktop: 1440,
   },
-  media: (value: number) => `@media (max-width: ${value}px)`,
+  maxMedia: (value: number) => `@media (max-width: ${value}px)`,
+  minMedia: (value: number) => `@media (m-width: ${value}px)`,
 };

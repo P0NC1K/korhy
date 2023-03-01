@@ -17,16 +17,32 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   ${styledFunc.flex("center", "center", "column")};
   position: relative;
+
+  ${styledFunc.maxMedia(styledFunc.breakpoints.tablet)} {
+    height: 100vh;
+  }
 `;
 
 export const Content = styled.div`
   ${styledFunc.flex("space-between", "center", "row")};
   flex-wrap: wrap;
+  padding: 0 15px;
   gap: 100px;
 
   img {
     width: 260px;
     height: 260px;
+  }
+
+  ${styledFunc.maxMedia(styledFunc.breakpoints.tablet)} {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    
+    img {
+      width: 150px;
+      height: 150px;
+    }
   }
 `;
 
@@ -39,6 +55,16 @@ export const Block = styled.div`
   p {
     font-size: 24px;
     line-height: 136%;
+  }
+
+  ${styledFunc.maxMedia(styledFunc.breakpoints.tablet)} {
+    width: 70%;
+    align-items: center;
+    text-align: center;
+
+    .Main-Button-Wrapper {
+      width: 100%;
+    }
   }
 `;
 
@@ -63,4 +89,13 @@ export const TitleWrapper = styled.div`
     font-weight: 600;
     font-size: 48px;
   }
+
+  ${styledFunc.maxMedia(styledFunc.breakpoints.tablet)} {
+    align-items: center;
+
+    h4 {
+      display: none;
+    }
+  }
+
 `;

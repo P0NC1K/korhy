@@ -15,4 +15,4 @@ Modern and responsive design for an engaging user experience
 **Storybook**: A development environment for UI components that ensures consistency in design<br />
 
 # Getting Started
-To get started with Korhy, simply visit the website at <a>korhy.vercel.app</a> and start browsing our selection of high-quality coffee beans. You can also sign up for a subscription service to receive regular shipments of your favorite blends.
+To get started with Korhy, simply visit the website at [korhy](korhy.vercel.app) and check it out. Unfortunately the website is not finished and we are still working on it.
